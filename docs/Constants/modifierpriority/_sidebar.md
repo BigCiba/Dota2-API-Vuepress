@@ -1,0 +1,6 @@
+* [**modifierpriority**](/Constants/_sidebar)
+	* [MODIFIER_PRIORITY_HIGH](Constants/modifierpriority/MODIFIER_PRIORITY_HIGH)
+	* [MODIFIER_PRIORITY_LOW](Constants/modifierpriority/MODIFIER_PRIORITY_LOW)
+	* [MODIFIER_PRIORITY_NORMAL](Constants/modifierpriority/MODIFIER_PRIORITY_NORMAL)
+	* [MODIFIER_PRIORITY_SUPER_ULTRA](Constants/modifierpriority/MODIFIER_PRIORITY_SUPER_ULTRA)
+	* [MODIFIER_PRIORITY_ULTRA](Constants/modifierpriority/MODIFIER_PRIORITY_ULTRA)

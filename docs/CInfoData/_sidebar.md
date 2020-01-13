@@ -1,0 +1,7 @@
+* [**CInfoData**](/)
+	* [QueryColor](CInfoData/QueryColor)
+	* [QueryFloat](CInfoData/QueryFloat)
+	* [QueryInt](CInfoData/QueryInt)
+	* [QueryNumber](CInfoData/QueryNumber)
+	* [QueryString](CInfoData/QueryString)
+	* [QueryVector](CInfoData/QueryVector)

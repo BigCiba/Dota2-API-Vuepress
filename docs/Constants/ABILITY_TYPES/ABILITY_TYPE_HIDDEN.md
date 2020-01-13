@@ -1,0 +1,5 @@
+# ABILITY_TYPE_HIDDEN
+# Description
+隐藏技能，无效，使用DOTA_ABILITY_BEHAVIOR中的DOTA_ABILITY_BEHAVIOR_HIDDEN
+# Example
+```No Example Set```

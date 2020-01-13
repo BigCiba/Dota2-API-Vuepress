@@ -1,0 +1,12 @@
+# DOTAProjectileAttachment_t
+?> No Description Set
+
+Name|Value|Description|Client
+--|:--:|--|:--:
+[DOTA_PROJECTILE_ATTACHMENT_ATTACK_1](Constants/DOTAProjectileAttachment_t/DOTA_PROJECTILE_ATTACHMENT_ATTACK_1)|1|No Description Set|✖
+[DOTA_PROJECTILE_ATTACHMENT_ATTACK_2](Constants/DOTAProjectileAttachment_t/DOTA_PROJECTILE_ATTACHMENT_ATTACK_2)|2|No Description Set|✖
+[DOTA_PROJECTILE_ATTACHMENT_ATTACK_3](Constants/DOTAProjectileAttachment_t/DOTA_PROJECTILE_ATTACHMENT_ATTACK_3)|4|No Description Set|✖
+[DOTA_PROJECTILE_ATTACHMENT_ATTACK_4](Constants/DOTAProjectileAttachment_t/DOTA_PROJECTILE_ATTACHMENT_ATTACK_4)|5|No Description Set|✖
+[DOTA_PROJECTILE_ATTACHMENT_HITLOCATION](Constants/DOTAProjectileAttachment_t/DOTA_PROJECTILE_ATTACHMENT_HITLOCATION)|3|No Description Set|✖
+[DOTA_PROJECTILE_ATTACHMENT_LAST](Constants/DOTAProjectileAttachment_t/DOTA_PROJECTILE_ATTACHMENT_LAST)|6|No Description Set|✖
+[DOTA_PROJECTILE_ATTACHMENT_NONE](Constants/DOTAProjectileAttachment_t/DOTA_PROJECTILE_ATTACHMENT_NONE)|0|No Description Set|✖

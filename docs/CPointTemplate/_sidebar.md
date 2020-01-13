@@ -1,0 +1,5 @@
+* [**CPointTemplate**](/)
+	* [DeleteCreatedSpawnGroups](CPointTemplate/DeleteCreatedSpawnGroups)
+	* [ForceSpawn](CPointTemplate/ForceSpawn)
+	* [GetSpawnedEntities](CPointTemplate/GetSpawnedEntities)
+	* [SetSpawnCallback](CPointTemplate/SetSpawnCallback)

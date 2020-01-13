@@ -1,0 +1,4 @@
+* [**subquest_text_replace_values_t**](/Constants/_sidebar)
+	* [SUBQUEST_NUM_TEXT_REPLACE_VALUES](Constants/subquest_text_replace_values_t/SUBQUEST_NUM_TEXT_REPLACE_VALUES)
+	* [SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE](Constants/subquest_text_replace_values_t/SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE)
+	* [SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE](Constants/subquest_text_replace_values_t/SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE)

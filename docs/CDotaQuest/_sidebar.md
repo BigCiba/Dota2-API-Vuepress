@@ -1,0 +1,8 @@
+* [**CDotaQuest**](/)
+	* [AddSubquest](CDotaQuest/AddSubquest)
+	* [CompleteQuest](CDotaQuest/CompleteQuest)
+	* [GetSubquest](CDotaQuest/GetSubquest)
+	* [GetSubquestByName](CDotaQuest/GetSubquestByName)
+	* [RemoveSubquest](CDotaQuest/RemoveSubquest)
+	* [SetTextReplaceString](CDotaQuest/SetTextReplaceString)
+	* [SetTextReplaceValue](CDotaQuest/SetTextReplaceValue)

@@ -1,0 +1,6 @@
+* [**CDOTA_Modifier_Lua_Horizontal_Motion**](/)
+	* [ApplyHorizontalMotionController](CDOTA_Modifier_Lua_Horizontal_Motion/ApplyHorizontalMotionController)
+	* [GetPriority](CDOTA_Modifier_Lua_Horizontal_Motion/GetPriority)
+	* [OnHorizontalMotionInterrupted](CDOTA_Modifier_Lua_Horizontal_Motion/OnHorizontalMotionInterrupted)
+	* [SetPriority](CDOTA_Modifier_Lua_Horizontal_Motion/SetPriority)
+	* [UpdateHorizontalMotion](CDOTA_Modifier_Lua_Horizontal_Motion/UpdateHorizontalMotion)

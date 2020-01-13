@@ -1,0 +1,2 @@
+* [**SteamInfo**](/)
+	* [IsPublicUniverse](SteamInfo/IsPublicUniverse)

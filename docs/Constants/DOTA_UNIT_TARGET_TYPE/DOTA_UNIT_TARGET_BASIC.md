@@ -1,0 +1,5 @@
+# DOTA_UNIT_TARGET_BASIC
+# Description
+DOTA_UNIT_TARGET_COURIER + DOTA_UNIT_TARGET_CREEP
+# Example
+```No Example Set```
