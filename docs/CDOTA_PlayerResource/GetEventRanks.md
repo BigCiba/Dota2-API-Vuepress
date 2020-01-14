@@ -1,6 +1,6 @@
 # GetEventRanks
 ```
-<unknown> GetEventRanks(nPlayerID)
+unknown GetEventRanks(nPlayerID)
 ```
 # Class
 ✔ `Server: CDOTA_PlayerResource`  

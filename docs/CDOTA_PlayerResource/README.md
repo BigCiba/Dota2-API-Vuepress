@@ -19,7 +19,7 @@ Function|Description|Client
 [int GetClaimedDenies(iPlayerID)](GetClaimedDenies)||✖
 [float GetClaimedFarm(iPlayerID, bOnlyEarned)](GetClaimedFarm)||✖
 [int GetClaimedMisses(iPlayerID)](GetClaimedMisses)||✖
-[<unknown> GetConnectionState(iPlayerID)](GetConnectionState)||✖
+[unknown GetConnectionState(iPlayerID)](GetConnectionState)||✖
 [int GetCreepDamageTaken(iPlayerID, bTotal)](GetCreepDamageTaken)||✖
 [float GetCustomBuybackCooldown(iPlayerID)](GetCustomBuybackCooldown)||✖
 [int GetCustomBuybackCost(iPlayerID)](GetCustomBuybackCost)||✖
@@ -29,7 +29,7 @@ Function|Description|Client
 [int GetDenies(iPlayerID)](GetDenies)||✖
 [unsigned GetEventPointsForPlayerID(nPlayerID)](GetEventPointsForPlayerID)||✖
 [unsigned GetEventPremiumPoints(nPlayerID)](GetEventPremiumPoints)||✖
-[<unknown> GetEventRanks(nPlayerID)](GetEventRanks)||✖
+[unknown GetEventRanks(nPlayerID)](GetEventRanks)||✖
 [int GetGold(iPlayerID)](GetGold)||✖
 [int GetGoldLostToDeath(iPlayerID)](GetGoldLostToDeath)||✖
 [float GetGoldPerMin(iPlayerID)](GetGoldPerMin)||✖

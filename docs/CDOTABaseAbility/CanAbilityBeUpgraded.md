@@ -1,6 +1,6 @@
 # CanAbilityBeUpgraded
 ```
-<unknown> CanAbilityBeUpgraded()
+unknown CanAbilityBeUpgraded()
 ```
 # Class
 ✔ `Server: CDOTABaseAbility`  

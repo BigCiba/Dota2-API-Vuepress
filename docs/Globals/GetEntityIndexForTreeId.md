@@ -1,6 +1,6 @@
 # GetEntityIndexForTreeId
 ```
-<unknown> GetEntityIndexForTreeId(unsigned_1)
+unknown GetEntityIndexForTreeId(unsigned_1)
 ```
 # Class
 ✔ `Server: Globals`  

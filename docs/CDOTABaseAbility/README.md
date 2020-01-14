@@ -1,7 +1,7 @@
 # CDOTABaseAbility
 Function|Description|Client
 --|--|:--:
-[<unknown> CanAbilityBeUpgraded()](CanAbilityBeUpgraded)||✖
+[unknown CanAbilityBeUpgraded()](CanAbilityBeUpgraded)||✖
 [bool CastAbility()](CastAbility)||✖
 [bool ContinueCasting()](ContinueCasting)||✖
 [void CreateVisibilityNode(vLocation, fRadius, fDuration)](CreateVisibilityNode)||✖
@@ -116,7 +116,7 @@ Function|Description|Client
 [void SetUpgradeRecommended(bUpgradeRecommended)](SetUpgradeRecommended)||✖
 [bool ShouldUseResources()](ShouldUseResources)||✖
 [void SpeakAbilityConcept(iConcept)](SpeakAbilityConcept)||✖
-[<unknown> SpeakTrigger()](SpeakTrigger)||✖
+[unknown SpeakTrigger()](SpeakTrigger)||✖
 [void StartCooldown(flCooldown)](StartCooldown)||✖
 [void ToggleAbility()](ToggleAbility)||✖
 [void ToggleAutoCast()](ToggleAutoCast)||✖

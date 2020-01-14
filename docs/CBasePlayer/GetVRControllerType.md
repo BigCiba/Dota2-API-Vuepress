@@ -1,6 +1,6 @@
 # GetVRControllerType
 ```
-<unknown> GetVRControllerType()
+unknown GetVRControllerType()
 ```
 # Class
 ✔ `Server: CBasePlayer`  

@@ -73,7 +73,7 @@ Function|Description|Client
 [float FrameTime()](FrameTime)|Get the time spent on the server in the last frame|✔
 [string GetDedicatedServerKey(string_1)](GetDedicatedServerKey)|( version )|✖
 [string GetDedicatedServerKeyV2(string_1)](GetDedicatedServerKeyV2)|( version )|✖
-[int GetEntityIndexForTreeId(unsigned_1)](GetEntityIndexForTreeId)|Get the enity index for a tree id specified as the entindex_target of a DOTA_UNIT_ORDER_CAST_TARGET_TREE.|✖
+[unknown GetEntityIndexForTreeId(unsigned_1)](GetEntityIndexForTreeId)|Get the enity index for a tree id specified as the entindex_target of a DOTA_UNIT_ORDER_CAST_TARGET_TREE.|✖
 [int GetFrameCount()](GetFrameCount)|Returns the engines current frame count|✔
 [float GetGroundHeight(Vector_1, handle_2)](GetGroundHeight)||✖
 [Vector GetGroundPosition(Vector_1, handle_2)](GetGroundPosition)|Returns the supplied position moved to the ground. Second parameter is an NPC for measuring movement collision hull offset.|✖

@@ -1,6 +1,6 @@
 # GetConnectionState
 ```
-<unknown> GetConnectionState(iPlayerID)
+unknown GetConnectionState(iPlayerID)
 ```
 # Class
 ✔ `Server: CDOTA_PlayerResource`  

@@ -1,6 +1,6 @@
 # SpeakTrigger
 ```
-<unknown> SpeakTrigger()
+unknown SpeakTrigger()
 ```
 # Class
 ✔ `Server: CDOTABaseAbility`  
