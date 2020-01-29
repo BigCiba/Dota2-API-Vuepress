@@ -1,2 +1,0 @@
-* [**CMarkupVolumeTagged**](/)
-	* [HasTag](CMarkupVolumeTagged/HasTag)

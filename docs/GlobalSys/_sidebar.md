@@ -1,5 +1,0 @@
-* [**GlobalSys**](/)
-	* [CommandLineCheck](GlobalSys/CommandLineCheck)
-	* [CommandLineFloat](GlobalSys/CommandLineFloat)
-	* [CommandLineInt](GlobalSys/CommandLineInt)
-	* [CommandLineStr](GlobalSys/CommandLineStr)

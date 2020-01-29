@@ -1,2 +1,0 @@
-* [**CPointWorldText**](/)
-	* [SetMessage](CPointWorldText/SetMessage)

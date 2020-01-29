@@ -1,2 +1,0 @@
-* [**CScriptKeyValues**](/)
-	* [GetValue](CScriptKeyValues/GetValue)

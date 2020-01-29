@@ -1,1 +1,0 @@
-# CDOTA_BaseNPC_Creature

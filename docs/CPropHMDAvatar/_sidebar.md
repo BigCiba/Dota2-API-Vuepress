@@ -1,2 +1,0 @@
-* [**CPropHMDAvatar**](/)
-	* [GetVRHand](CPropHMDAvatar/GetVRHand)

@@ -1,7 +1,0 @@
-* [**CScriptHTTPRequest**](/)
-	* [Send](CScriptHTTPRequest/Send)
-	* [SetHTTPRequestAbsoluteTimeoutMS](CScriptHTTPRequest/SetHTTPRequestAbsoluteTimeoutMS)
-	* [SetHTTPRequestGetOrPostParameter](CScriptHTTPRequest/SetHTTPRequestGetOrPostParameter)
-	* [SetHTTPRequestHeaderValue](CScriptHTTPRequest/SetHTTPRequestHeaderValue)
-	* [SetHTTPRequestNetworkActivityTimeout](CScriptHTTPRequest/SetHTTPRequestNetworkActivityTimeout)
-	* [SetHTTPRequestRawPostBody](CScriptHTTPRequest/SetHTTPRequestRawPostBody)

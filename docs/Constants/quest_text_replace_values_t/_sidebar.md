@@ -1,6 +1,0 @@
-* [**quest_text_replace_values_t**](/Constants/_sidebar)
-	* [QUEST_NUM_TEXT_REPLACE_VALUES](Constants/quest_text_replace_values_t/QUEST_NUM_TEXT_REPLACE_VALUES)
-	* [QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE](Constants/quest_text_replace_values_t/QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE)
-	* [QUEST_TEXT_REPLACE_VALUE_REWARD](Constants/quest_text_replace_values_t/QUEST_TEXT_REPLACE_VALUE_REWARD)
-	* [QUEST_TEXT_REPLACE_VALUE_ROUND](Constants/quest_text_replace_values_t/QUEST_TEXT_REPLACE_VALUE_ROUND)
-	* [QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE](Constants/quest_text_replace_values_t/QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE)

@@ -1,6 +1,0 @@
-* [**CDOTAGameManager**](/)
-	* [GetHeroDataByName_Script](CDOTAGameManager/GetHeroDataByName_Script)
-	* [GetHeroIDByName](CDOTAGameManager/GetHeroIDByName)
-	* [GetHeroNameByID](CDOTAGameManager/GetHeroNameByID)
-	* [GetHeroNameForUnitName](CDOTAGameManager/GetHeroNameForUnitName)
-	* [GetHeroUnitNameByID](CDOTAGameManager/GetHeroUnitNameByID)

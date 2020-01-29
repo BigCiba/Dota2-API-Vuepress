@@ -1,6 +1,0 @@
-* [**CEnvProjectedTexture**](/)
-	* [SetFarRange](CEnvProjectedTexture/SetFarRange)
-	* [SetLinearAttenuation](CEnvProjectedTexture/SetLinearAttenuation)
-	* [SetNearRange](CEnvProjectedTexture/SetNearRange)
-	* [SetQuadraticAttenuation](CEnvProjectedTexture/SetQuadraticAttenuation)
-	* [SetVolumetrics](CEnvProjectedTexture/SetVolumetrics)

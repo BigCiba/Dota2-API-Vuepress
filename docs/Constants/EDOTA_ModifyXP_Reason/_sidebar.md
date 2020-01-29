@@ -1,5 +1,0 @@
-* [**EDOTA_ModifyXP_Reason**](/Constants/_sidebar)
-	* [DOTA_ModifyXP_CreepKill](Constants/EDOTA_ModifyXP_Reason/DOTA_ModifyXP_CreepKill)
-	* [DOTA_ModifyXP_HeroKill](Constants/EDOTA_ModifyXP_Reason/DOTA_ModifyXP_HeroKill)
-	* [DOTA_ModifyXP_RoshanKill](Constants/EDOTA_ModifyXP_Reason/DOTA_ModifyXP_RoshanKill)
-	* [DOTA_ModifyXP_Unspecified](Constants/EDOTA_ModifyXP_Reason/DOTA_ModifyXP_Unspecified)
