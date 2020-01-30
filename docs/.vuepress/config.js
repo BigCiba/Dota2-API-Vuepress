@@ -1,4 +1,5 @@
 module.exports = {
+	base: '/Dota2-API-Vuepress/',
 	title: 'Dota2 文档',
 	description: 'Dota2 API文档',
 	themeConfig: {
