@@ -11,3 +11,4 @@ Function|Description|Client
 [void SetKillCamUnit(hEntity)](SetKillCamUnit)|Set the kill cam unit for this hero.|❌
 [void SetMusicStatus(nMusicStatus, flIntensity)](SetMusicStatus)|(nMusicStatus, flIntensity) - Set the music status for this player, note this will only really apply if dota_music_battle_enable is off.|❌
 [void SetSelectedHero(pszHeroName)](SetSelectedHero)|Sets this player's hero selection.|❌
+[handle SpawnCourierAtPosition(vLocation)](SpawnCourierAtPosition)|Spawn a courier for this player at the given position.|❌

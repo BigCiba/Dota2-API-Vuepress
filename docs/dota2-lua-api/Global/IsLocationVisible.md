@@ -1,15 +1,21 @@
 # IsLocationVisible
 ```lua
-bool IsLocationVisible(int_1, Vector_2)
+bool IsLocationVisible(iTeamNumber, vLocation)
 ```
 # Class
 ✔️ `Server: Global`  
 ❌ `Client: undefined`  
 
 # Function Description
-Ask fog of war if a location is visible to a certain team (nTeamNumber, vLocation).
+判断某个位置对某个队伍是否在战争迷雾中
 # Parameters
 Type|Name|Description
 --|--|--
-int|int_1|No Description Set
-Vector|Vector_2|No Description Set
+int|iTeamNumber|队伍编号
+Vector|vLocation|位置
+
+# Example
+```lua
+local hParent = self:GetParent()
+IsLocationVisible(hParent:GetOpposingTeamNumber(), hParent:GetAbsOrigin())
+```

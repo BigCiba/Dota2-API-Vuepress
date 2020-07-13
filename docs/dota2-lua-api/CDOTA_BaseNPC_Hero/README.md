@@ -96,6 +96,5 @@ Function|Description|Client
 [void SetTimeUntilRespawn(time)](SetTimeUntilRespawn)||❌
 [bool ShouldDoFlyHeightVisual()](ShouldDoFlyHeightVisual)||❌
 [void SpendGold(iCost, iReason)](SpendGold)|Args: int nGold, int nReason|❌
-[bool UnitCanRespawn()](UnitCanRespawn)||❌
 [void UpgradeAbility(hAbility)](UpgradeAbility)|This upgrades the passed ability if it exists and the hero has enough ability points.|❌
 [bool WillReincarnate()](WillReincarnate)||❌

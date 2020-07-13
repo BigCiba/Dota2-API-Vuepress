@@ -1,6 +1,6 @@
 # AddBotPlayerWithEntityScript
 ```lua
-handle AddBotPlayerWithEntityScript(string_1, string_2, int_3, string_4)
+handle AddBotPlayerWithEntityScript(string_1, string_2, int_3, string_4, bool_5)
 ```
 # Class
 ✔️ `Server: CDOTAGamerules`  
@@ -15,3 +15,4 @@ string|string_1|No Description Set
 string|string_2|No Description Set
 int|int_3|No Description Set
 string|string_4|No Description Set
+bool|bool_5|No Description Set

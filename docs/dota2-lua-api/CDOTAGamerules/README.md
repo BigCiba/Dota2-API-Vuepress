@@ -3,7 +3,7 @@
 
 Function|Description|Client
 --|--|:--:
-[handle AddBotPlayerWithEntityScript(string_1, string_2, int_3, string_4)](AddBotPlayerWithEntityScript)|Spawn a bot player of the passed hero name, player name, and team.|❌
+[handle AddBotPlayerWithEntityScript(string_1, string_2, int_3, string_4, bool_5)](AddBotPlayerWithEntityScript)|Spawn a bot player of the passed hero name, player name, and team.|❌
 [bool AddEventMetadataLeaderboardEntry(string_1, unsigned_2, unsigned_3, unsigned_4, unsigned_5, unsigned_6, unsigned_7, unsigned_8, unsigned_9)](AddEventMetadataLeaderboardEntry)|Event-only ( string szNameSuffix, int nStars, int nMaxStars, int nExtraData1, int nExtraData2 )|❌
 [void AddItemToWhiteList(string_1)](AddItemToWhiteList)|Add an item to the whitelist|❌
 [void AddMinimapDebugPoint(int_1, Vector_2, int_3, int_4, int_5, int_6, float_7)](AddMinimapDebugPoint)|Add a point on the minimap.|❌
@@ -17,6 +17,7 @@ Function|Description|Client
 [void FinishCustomGameSetup()](FinishCustomGameSetup)|Indicate that the custom game setup phase is complete, and advance to the game.|❌
 [void ForceCreepSpawn()](ForceCreepSpawn)|Spawn the next wave of creeps.|❌
 [void ForceGameStart()](ForceGameStart)|Transition game state to DOTA_GAMERULES_STATE_GAME_IN_PROGRESS|❌
+[handle GetAnnouncer(int_1)](GetAnnouncer)|Get the announcer for a team|❌
 [int GetCustomGameDifficulty()](GetCustomGameDifficulty)|Returns the difficulty level of the custom game mode|✔️
 [int GetCustomGameTeamMaxPlayers(int_1)](GetCustomGameTeamMaxPlayers)|Get whether a team is selectable during game setup|❌
 [float GetDOTATime(IncludePregameTime , IncludeNegativeTime)](GetDOTATime)|(b IncludePregameTime b IncludeNegativeTime) Returns the actual DOTA in-game clock time.
@@ -48,6 +49,7 @@ Function|Description|Client
 [bool PlayerHasCustomGameHostPrivileges(handle_1)](PlayerHasCustomGameHostPrivileges)|Whether a player has custom game host privileges (shuffle teams, etc.)|❌
 [void Playtesting_UpdateAddOnKeyValues()](Playtesting_UpdateAddOnKeyValues)|Updates custom hero, unit and ability KeyValues in memory with the latest values from disk|❌
 [void PrepareSpawners(float_1)](PrepareSpawners)|Prepare Dota lane style spawners with a given interval|❌
+[void RemoveFakeClient(int_1)](RemoveFakeClient)|Removes a fake client|❌
 [void RemoveItemFromWhiteList(string_1)](RemoveItemFromWhiteList)|Remove an item from the whitelist|❌
 [void ResetDefeated()](ResetDefeated)|Restart after killing the ancient, etc.|❌
 [void ResetGameTime()](ResetGameTime)|Restart gametime from 0|❌
@@ -72,6 +74,7 @@ Function|Description|Client
 [bool SetEventMetadataCustomTable(handle_1)](SetEventMetadataCustomTable)|Event-only ( table hMetadataTable )|❌
 [bool SetEventSignoutCustomTable(handle_1)](SetEventSignoutCustomTable)|Event-only ( table hMetadataTable )|❌
 [void SetFirstBloodActive(bool_1)](SetFirstBloodActive)|Sets whether First Blood has been triggered.|❌
+[void SetGameTimeFrozen(bool_1)](SetGameTimeFrozen)|Freeze the game time.|❌
 [void SetGameWinner(int_1)](SetGameWinner)|Makes the specified team win|❌
 [void SetGoldPerTick(int_1)](SetGoldPerTick)|Set the auto gold increase per timed interval.|❌
 [void SetGoldTickTime(float_1)](SetGoldTickTime)|Set the time interval between auto gold increases.|❌
@@ -98,4 +101,5 @@ Function|Description|Client
 [void SetWeatherWindDirection(Vector_1)](SetWeatherWindDirection)|Set Weather Wind Direction Vector|❌
 [void SetWhiteListEnabled(bool_1)](SetWhiteListEnabled)|Item whitelist functionality enable/disable|❌
 [void SpawnAndReleaseCreeps()](SpawnAndReleaseCreeps)|Spawn and release the next creep wave from Dota lane style spawners.|❌
+[void SpawnNeutralCreeps()](SpawnNeutralCreeps)|Spawn and release the next set of neutral camps.|❌
 [int State_Get()](State_Get)|Get the current Gamerules state|✔️

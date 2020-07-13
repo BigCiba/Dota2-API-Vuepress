@@ -108,9 +108,10 @@ Function|Description|Client
 [int GetModifierStackCount(pszScriptName, hCaster)](GetModifierStackCount)|Gets the stack count of a given modifier.|✔️
 [float GetMoveSpeedModifier(flBaseSpeed, bReturnUnslowed)](GetMoveSpeedModifier)||✔️
 [bool GetMustReachEachGoalEntity()](GetMustReachEachGoalEntity)|Set whether this NPC is required to reach each goal entity, rather than being allowed to unkink their path.|❌
+[string GetNeutralSpawnerName()](GetNeutralSpawnerName)|Get the name of this camp's neutral spawner.|❌
 [bool GetNeverMoveToClearSpace()](GetNeverMoveToClearSpace)|If set to true, we will never attempt to move this unit to clear space, even when it unphases.|❌
 [int GetNightTimeVisionRange()](GetNightTimeVisionRange)|Returns the vision range after modifiers.|✔️
-[int GetOpposingTeamNumber()](GetOpposingTeamNumber)||✔️
+[int GetOpposingTeamNumber()](GetOpposingTeamNumber)|获取敌方的队伍编号|✔️
 [float GetPaddedCollisionRadius()](GetPaddedCollisionRadius)|Get the collision hull radius (including padding) of this NPC.|✔️
 [float GetPhysicalArmorBaseValue()](GetPhysicalArmorBaseValue)|Returns base physical armor value.|✔️
 [float GetPhysicalArmorValue(bIgnoreBase)](GetPhysicalArmorValue)|Returns current physical armor value.|✔️
@@ -289,6 +290,7 @@ Function|Description|Client
 [void SetUnitCanRespawn(bCanRespawn)](SetUnitCanRespawn)||❌
 [void SetUnitName(pName)](SetUnitName)||❌
 [bool ShouldIdleAcquire()](ShouldIdleAcquire)||❌
+[void SpeakConcept(hCriteriaTable)](SpeakConcept)|Speak a response system concept with the TLK_DOTA_CUSTOM concept.|❌
 [void SpendMana(flManaSpent, hAbility)](SpendMana)|Spend mana from this unit, this can be used for spending mana from abilities or item usage.|❌
 [void StartGesture(nActivity)](StartGesture)|Add the given gesture activity.|❌
 [void StartGestureWithPlaybackRate(nActivity, flRate)](StartGestureWithPlaybackRate)|Add the given gesture activity with a playback rate override.|❌

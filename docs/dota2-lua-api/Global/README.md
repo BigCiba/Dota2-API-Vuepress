@@ -23,6 +23,7 @@ Function|Description|Client
 [handle CreateItemOnPositionForLaunch(Vector_1, handle_2)](CreateItemOnPositionForLaunch)|Create a physical item at a given location, can start in air (but doesn't clear a space)|❌
 [handle CreateItemOnPositionSync(Vector_1, handle_2)](CreateItemOnPositionSync)|Create a physical item at a given location|❌
 [handle CreateModifierThinker(handle_1, handle_2, string_3, handle_4, Vector_5, int_6, bool_7)](CreateModifierThinker)|Create a modifier not associated with an NPC. ( hCaster, hAbility, modifierName, paramTable, vOrigin, nTeamNumber, bPhantomBlocker )|❌
+[handle CreateRune(Vector_1, int_2)](CreateRune)|Create a rune of the specified type (vLocation, iRuneType).|❌
 [handle CreateSceneEntity(string_1)](CreateSceneEntity)|Create a scene entity to play the specified scene.|❌
 [handle CreateTempTree(Vector_1, float_2)](CreateTempTree)|Create a temporary tree, uses a default tree model. (vLocation, flDuration).|❌
 [handle CreateTempTreeWithModel(Vector_1, float_2, string_3)](CreateTempTreeWithModel)|Create a temporary tree, specifying the tree model name. (vLocation, flDuration, szModelName).|❌
@@ -51,6 +52,7 @@ Function|Description|Client
 [void DoScriptAssert(bool_1, string_2)](DoScriptAssert)|#ScriptAssert:Asserts the passed in value. Prints out a message and brings up the assert dialog.|✔️
 [string DoUniqueString(string_1)](DoUniqueString)|#UniqueString:Generate a string guaranteed to be unique across the life of the script VM, with an optional root string. Useful for adding data to tables when not sure what keys are already in use in that table.|✔️
 [float DotProduct(Vector_1, Vector_2)](DotProduct)||❌
+[void DropNeutralItemAtPositionForHero(string_1, Vector_2, handle_3, int_4)](DropNeutralItemAtPositionForHero)|Drop a neutral item for the team of the hero at the given tier.|❌
 [void EmitAnnouncerSound(string_1)](EmitAnnouncerSound)|Emit an announcer sound for all players.|❌
 [void EmitAnnouncerSoundForPlayer(string_1, int_2)](EmitAnnouncerSoundForPlayer)|Emit an announcer sound for a player.|❌
 [void EmitAnnouncerSoundForTeam(string_1, int_2)](EmitAnnouncerSoundForTeam)|Emit an announcer sound for a team.|❌
@@ -65,6 +67,7 @@ Function|Description|Client
 [float ExponentialDecay(float_1, float_2, float_3)](ExponentialDecay)|Smooth curve decreasing slower as it approaches zero|✔️
 [bool FindClearRandomPositionAroundUnit(handle_1, handle_2, int_3)](FindClearRandomPositionAroundUnit)|Finds a clear random position around a given target unit, using the target unit's padded collision radius.|❌
 [bool FindClearSpaceForUnit(handle_1, Vector_2, bool_3)](FindClearSpaceForUnit)|Place a unit somewhere not already occupied.|❌
+[handle FindSpawnEntityForTeam(int_1)](FindSpawnEntityForTeam)|Find a spawn point for the given team.|❌
 [table FindUnitsInLine(int_1, Vector_2, Vector_3, handle_4, float_5, int_6, int_7, int_8)](FindUnitsInLine)|Find units that intersect the given line with the given flags.|❌
 [table FindUnitsInRadius(int_1, Vector_2, handle_3, float_4, int_5, int_6, int_7, int_8, bool_9)](FindUnitsInRadius)|Finds the units in a given radius with the given flags.|❌
 [void FireEntityIOInputNameOnly(ehandle_1, string_2)](FireEntityIOInputNameOnly)|Fire Entity's Action Input w/no data|✔️
@@ -99,11 +102,12 @@ Function|Description|Client
 [float GetWorldMaxY()](GetWorldMaxY)|Gets the world's maximum Y position.|❌
 [float GetWorldMinX()](GetWorldMinX)|Gets the world's minimum X position.|❌
 [float GetWorldMinY()](GetWorldMinY)|Gets the world's minimum Y position.|❌
+[int GetXPNeededToReachNextLevel(int_1)](GetXPNeededToReachNextLevel)|Get amount of XP required to reach the next level.|❌
 [void InitLogFile(string_1, string_2)](InitLogFile)|InitLogFile is deprecated. Print to the console for logging instead.|✔️
 [bool IsClient()](IsClient)|Returns true if this is lua running from the client.dll.|✔️
 [bool IsDedicatedServer()](IsDedicatedServer)|Returns true if this server is a dedicated server.|✔️
 [bool IsInToolsMode()](IsInToolsMode)|Returns true if this is lua running within tools mode.|✔️
-[bool IsLocationVisible(int_1, Vector_2)](IsLocationVisible)|Ask fog of war if a location is visible to a certain team (nTeamNumber, vLocation).|❌
+[bool IsLocationVisible(iTeamNumber, vLocation)](IsLocationVisible)|判断某个位置对某个队伍是否在战争迷雾中|❌
 [bool IsMarkedForDeletion(handle_1)](IsMarkedForDeletion)|Returns true if the entity is valid and marked for deletion.|✔️
 [bool IsServer()](IsServer)|Returns true if this is lua running from the server.dll.|✔️
 [bool IsValidEntity(handle_1)](IsValidEntity)|Checks to see if the given hScript is a valid entity|✔️
