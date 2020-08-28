@@ -5,6 +5,7 @@ Function|Description|Client
 --|--|:--:
 [handle AddBotPlayerWithEntityScript(string_1, string_2, int_3, string_4, bool_5)](AddBotPlayerWithEntityScript)|Spawn a bot player of the passed hero name, player name, and team.|❌
 [bool AddEventMetadataLeaderboardEntry(string_1, unsigned_2, unsigned_3, unsigned_4, unsigned_5, unsigned_6, unsigned_7, unsigned_8, unsigned_9)](AddEventMetadataLeaderboardEntry)|Event-only ( string szNameSuffix, int nStars, int nMaxStars, int nExtraData1, int nExtraData2 )|❌
+[bool AddEventMetadataLeaderboardEntryRawScore(string_1, unsigned_2, unsigned_3, unsigned_4, unsigned_5, unsigned_6, unsigned_7, unsigned_8)](AddEventMetadataLeaderboardEntryRawScore)|Event-only ( string szNameSuffix, int nScore, int nExtraData1, int nExtraData2 )|❌
 [void AddItemToWhiteList(string_1)](AddItemToWhiteList)|Add an item to the whitelist|❌
 [void AddMinimapDebugPoint(int_1, Vector_2, int_3, int_4, int_5, int_6, float_7)](AddMinimapDebugPoint)|Add a point on the minimap.|❌
 [void AddMinimapDebugPointForTeam(int_1, Vector_2, int_3, int_4, int_5, int_6, float_7, int_8)](AddMinimapDebugPointForTeam)|Add a point on the minimap for a specific team.|❌
@@ -35,6 +36,7 @@ Function|Description|Client
 [float GetStateTransitionTime()](GetStateTransitionTime)|Get time remaining between state changes.|❌
 [float GetTimeOfDay()](GetTimeOfDay)|Get the time of day|❌
 [Vector GetWeatherWindDirection()](GetWeatherWindDirection)|Get Weather Wind Direction Vector|✔️
+[void IncreaseItemStock(int_1, string_2, int_3, int_4)](IncreaseItemStock)|Increase an item's stock count, clamped to item max (nTeamNumber, szItemName, nCount, nPlayerID .|❌
 [bool IsCheatMode()](IsCheatMode)|Are cheats enabled on the server|✔️
 [bool IsDaytime()](IsDaytime)|Is it day time?|❌
 [bool IsGamePaused()](IsGamePaused)|Returns whether the game is paused.|❌

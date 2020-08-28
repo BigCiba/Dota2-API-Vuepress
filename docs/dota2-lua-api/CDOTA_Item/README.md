@@ -24,6 +24,7 @@ Function|Description|Client
 [bool IsItem()](IsItem)||✔️
 [bool IsKillable()](IsKillable)||✔️
 [bool IsMuted()](IsMuted)||✔️
+[bool IsNeutralDrop()](IsNeutralDrop)||❌
 [bool IsPermanent()](IsPermanent)||✔️
 [bool IsPurchasable()](IsPurchasable)||✔️
 [bool IsRecipe()](IsRecipe)||✔️
@@ -32,6 +33,7 @@ Function|Description|Client
 [bool IsStackable()](IsStackable)||✔️
 [void LaunchLoot(bAutoUse, flHeight, flDuration, vEndPoint)](LaunchLoot)||❌
 [void LaunchLootInitialHeight(bAutoUse, flInitialHeight, flLaunchHeight, flDuration, vEndPoint)](LaunchLootInitialHeight)||❌
+[void LaunchLootRequiredHeight(bAutoUse, flRequiredHeight, flHeight, flDuration, vEndPoint)](LaunchLootRequiredHeight)||❌
 [void OnEquip()](OnEquip)||❌
 [void OnUnequip()](OnUnequip)||❌
 [bool RequiresCharges()](RequiresCharges)||✔️

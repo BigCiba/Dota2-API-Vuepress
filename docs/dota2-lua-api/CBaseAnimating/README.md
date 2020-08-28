@@ -15,6 +15,7 @@ Function|Description|Client
 [void ResetSequence(pSequenceName)](ResetSequence)|Sets the active sequence by name, resetting the current cycle.|❌
 [int ScriptLookupAttachment(pAttachmentName)](ScriptLookupAttachment)|Get the named attachment id.|❌
 [float SequenceDuration(pSequenceName)](SequenceDuration)|Returns the duration in seconds of the given sequence name.|❌
+[void SetCycle(flCycle)](SetCycle)|Set the cycle of the animation.|❌
 [void SetGraphLookTarget(vValue)](SetGraphLookTarget)|Pass the desired look target in world space to the graph|❌
 [void SetGraphParameter(pszParam, svArg)](SetGraphParameter)|Set the specific param value, type is inferred from the type in script|❌
 [void SetGraphParameterBool(szName, bValue)](SetGraphParameterBool)|Set the specific param on or off|❌

@@ -4,7 +4,7 @@ table GetLevelSpecialValueFor(szName, nLevel)
 ```
 # Class
 ✔️ `Server: CDOTABaseAbility`  
-❌ `Client: undefined`  
+✔️ `Client: C_DOTABaseAbility`  
 
 # Function Description
 

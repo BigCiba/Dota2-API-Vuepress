@@ -27,6 +27,7 @@ Function|Description|Client
 [bool IsDebuff()](IsDebuff)||✔️
 [bool IsHexDebuff()](IsHexDebuff)||✔️
 [bool IsStunDebuff()](IsStunDebuff)||✔️
+[void SendBuffRefreshToClients()](SendBuffRefreshToClients)||❌
 [void SetDuration(flDuration, bInformClient)](SetDuration)|(flTime, bInformClients)|✔️
 [void SetStackCount(iCount)](SetStackCount)||✔️
 [void StartIntervalThink(flInterval)](StartIntervalThink)|Start this modifier's think function (OnIntervalThink) with the given interval (float).  To stop, call with -1.|✔️

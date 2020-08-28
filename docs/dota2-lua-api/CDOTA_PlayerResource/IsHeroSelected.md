@@ -1,6 +1,6 @@
 # IsHeroSelected
 ```lua
-bool IsHeroSelected(pHeroname)
+bool IsHeroSelected(pHeroname, bIgnoreUnrevealedPick)
 ```
 # Class
 ✔️ `Server: CDOTA_PlayerResource`  
@@ -12,3 +12,4 @@ bool IsHeroSelected(pHeroname)
 Type|Name|Description
 --|--|--
 string|pHeroname|No Description Set
+bool|bIgnoreUnrevealedPick|No Description Set

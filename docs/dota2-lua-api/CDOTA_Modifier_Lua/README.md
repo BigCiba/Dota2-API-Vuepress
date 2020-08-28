@@ -36,5 +36,6 @@ Function|Description|Client
 [void OnRemoved()](OnRemoved)|Runs when the modifier is destroyed (before unit loses modifier).|✔️
 [void OnStackCountChanged(iStackCount)](OnStackCountChanged)|Runs when stack count changes (param is old count).|✔️
 [bool RemoveOnDeath()](RemoveOnDeath)|True/false if this modifier is removed when the parent dies.|✔️
+[void SetHasCustomTransmitterData(bHasCustomData)](SetHasCustomTransmitterData)||✔️
 [bool ShouldUseOverheadOffset()](ShouldUseOverheadOffset)|Apply the overhead offset to the attached effect.|✔️
 [int StatusEffectPriority()](StatusEffectPriority)|Relationship of this status effect with those from other buffs (higher is more likely to be shown).|✔️

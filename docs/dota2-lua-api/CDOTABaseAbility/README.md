@@ -15,7 +15,7 @@ Function|Description|Client
 [int GetAbilityDamageType()](GetAbilityDamageType)||❌
 [int GetAbilityIndex()](GetAbilityIndex)||❌
 [table GetAbilityKeyValues()](GetAbilityKeyValues)|Gets the key values definition for this ability.|❌
-[string GetAbilityName()](GetAbilityName)|Returns the name of this ability.|❌
+[string GetAbilityName()](GetAbilityName)|Returns the name of this ability.|✔️
 [int GetAbilityTargetFlags()](GetAbilityTargetFlags)||❌
 [int GetAbilityTargetTeam()](GetAbilityTargetTeam)||❌
 [int GetAbilityTargetType()](GetAbilityTargetType)||❌
@@ -47,7 +47,8 @@ Function|Description|Client
 [int GetHeroLevelRequiredToUpgrade()](GetHeroLevelRequiredToUpgrade)||❌
 [string GetIntrinsicModifierName()](GetIntrinsicModifierName)|返回此技能被动给予的修饰器的名称|❌
 [int GetLevel()](GetLevel)|Get the current level of the ability.|✔️
-[table GetLevelSpecialValueFor(szName, nLevel)](GetLevelSpecialValueFor)||❌
+[table GetLevelSpecialValueFor(szName, nLevel)](GetLevelSpecialValueFor)||✔️
+[table GetLevelSpecialValueNoOverride(szName, nLevel)](GetLevelSpecialValueNoOverride)||✔️
 [int GetManaCost(iLevel)](GetManaCost)||❌
 [int GetMaxLevel()](GetMaxLevel)||❌
 [float GetModifierValue()](GetModifierValue)||❌

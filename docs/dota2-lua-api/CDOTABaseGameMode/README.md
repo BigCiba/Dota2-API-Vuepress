@@ -3,7 +3,9 @@ extends [CBaseEntity](../CBaseEntity)
 
 Function|Description|Client
 --|--|:--:
+[void AddItemToCustomShop(pszItemName, pszShopName, pszCategory)](AddItemToCustomShop)|( pszItem, pszShop, pszCategory ) Add an item to purchase at a custom shop.|❌
 [int AddRealTimeCombatAnalyzerQuery(hQueryTable, hPlayer, pszQueryName)](AddRealTimeCombatAnalyzerQuery)|Begin tracking a sequence of events using the real time combat analyzer.|❌
+[handle AllocateFowBlockerRegion(flMinX, flMinY, flMaxX, flMaxY, flGridSize)](AllocateFowBlockerRegion)|Allocates an entity which can be used by custom games to control FoW occlusion volumes|❌
 [bool AreWeatherEffectsDisabled()](AreWeatherEffectsDisabled)|Get if weather effects are disabled on the client.|❌
 [void ClearBountyRunePickupFilter()](ClearBountyRunePickupFilter)|Clear the script filter that controls bounty rune pickup behavior.|❌
 [void ClearDamageFilter()](ClearDamageFilter)|Clear the script filter that controls how a unit takes damage.|❌
@@ -15,6 +17,7 @@ Function|Description|Client
 [void ClearModifyGoldFilter()](ClearModifyGoldFilter)|Clear the script filter that controls how hero gold is modified.|❌
 [void ClearRuneSpawnFilter()](ClearRuneSpawnFilter)|Clear the script filter that controls what rune spawns.|❌
 [void ClearTrackingProjectileFilter()](ClearTrackingProjectileFilter)|Clear the script filter that controls when tracking projectiles are launched.|❌
+[void DisableClumpingBehaviorByDefault(bDisabled)](DisableClumpingBehaviorByDefault)|Disable npc_dota_creature clumping behavior by default.|❌
 [void DisableHudFlip(bDisable)](DisableHudFlip)|Use to disable hud flip for this mod|❌
 [bool GetAlwaysShowPlayerInventory()](GetAlwaysShowPlayerInventory)|Show the player hero's inventory in the HUD, regardless of what unit is selected.|❌
 [bool GetAlwaysShowPlayerNames()](GetAlwaysShowPlayerNames)|Get whether player names are always shown, regardless of client setting.|❌
@@ -28,6 +31,8 @@ Function|Description|Client
 [float GetCustomGlyphCooldown()](GetCustomGlyphCooldown)|Get the current custom glyph cooldown.|❌
 [int GetCustomHeroMaxLevel()](GetCustomHeroMaxLevel)|Allows definition of the max level heroes can achieve (default is 25).|❌
 [float GetCustomScanCooldown()](GetCustomScanCooldown)|Get the current custom scan cooldown.|❌
+[int GetEventGameSeed()](GetEventGameSeed)|Get the Game Seed passed from the GC.|❌
+[unsigned GetEventWindowStartTime()](GetEventWindowStartTime)|Get the Event Window Start Time passed from the GC.|❌
 [float GetFixedRespawnTime()](GetFixedRespawnTime)|Gets the fixed respawn time.|❌
 [bool GetFogOfWarDisabled()](GetFogOfWarDisabled)|Turn the fog of war on or off.|❌
 [bool GetGoldSoundDisabled()](GetGoldSoundDisabled)|Turn the sound when gold is acquired off/on.|❌
@@ -47,6 +52,7 @@ Function|Description|Client
 [void ListenForQueryFailed(hFunction, hContext)](ListenForQueryFailed)|Set function and context for real time combat analyzer query failed.|❌
 [void ListenForQueryProgressChanged(hFunction, hContext)](ListenForQueryProgressChanged)|Set function and context for real time combat analyzer query progress changed.|❌
 [void ListenForQuerySucceeded(hFunction, hContext)](ListenForQuerySucceeded)|Set function and context for real time combat analyzer query succeeded.|❌
+[void RemoveItemFromCustomShop(pszItemName, pszShopName)](RemoveItemFromCustomShop)|( pszItem, pszShop ) Remove an item to purchase at a custom shop.|❌
 [void RemoveRealTimeCombatAnalyzerQuery(nQueryID)](RemoveRealTimeCombatAnalyzerQuery)|Stop tracking a combat analyzer query.|❌
 [void SetAbilityTuningValueFilter(hFunction, hContext)](SetAbilityTuningValueFilter)|Set a filter function to control the tuning values that abilities use. (Modify the table and Return true to use new values, return false to use the old values)|❌
 [void SetAlwaysShowPlayerInventory(bAlwaysShow)](SetAlwaysShowPlayerInventory)|Show the player hero's inventory in the HUD, regardless of what unit is selected.|❌
@@ -61,6 +67,7 @@ Function|Description|Client
 [void SetBuybackEnabled(bEnabled)](SetBuybackEnabled)|Enables or disables buyback completely.|❌
 [void SetCameraDistanceOverride(flCameraDistanceOverride)](SetCameraDistanceOverride)|Set a different camera distance; dota default is 1134.|❌
 [void SetCameraSmoothCountOverride(nSmoothCount)](SetCameraSmoothCountOverride)|Set a different camera smooth count; dota default is 8.|❌
+[void SetCameraZRange(flMinZ, flMaxZ)](SetCameraZRange)|Sets the camera Z range|❌
 [void SetCustomAttributeDerivedStatValue(nStatType, flNewValue)](SetCustomAttributeDerivedStatValue)|Modify derived stat value constants. ( AttributeDerivedStat eStatType, float flNewValue.|❌
 [void SetCustomBackpackCooldownPercent(flPercent)](SetCustomBackpackCooldownPercent)|Set the rate cooldown ticks down for items in the backpack.|❌
 [void SetCustomBackpackSwapCooldown(flCooldown)](SetCustomBackpackSwapCooldown)|Set a custom cooldown for swapping items into the backpack.|❌
@@ -75,11 +82,13 @@ Function|Description|Client
 [void SetDamageFilter(hFunction, hContext)](SetDamageFilter)|Set a filter function to control the behavior when a unit takes damage. (Modify the table and Return true to use new values, return false to cancel the event)|❌
 [void SetDaynightCycleDisabled(bDisable)](SetDaynightCycleDisabled)|Enable or disable the day/night cycle.|❌
 [void SetDeathOverlayDisabled(bDisabled)](SetDeathOverlayDisabled)|Specify whether the full screen death overlay effect plays when the selected hero dies.|❌
+[void SetDefaultStickyItem(pItem)](SetDefaultStickyItem)|Sets the default sticky item in the quickbuy|❌
 [void SetDraftingBanningTimeOverride(flValue)](SetDraftingBanningTimeOverride)|Set drafting hero banning time|❌
 [void SetDraftingHeroPickSelectTimeOverride(flValue)](SetDraftingHeroPickSelectTimeOverride)|Set drafting hero pick time|❌
 [void SetExecuteOrderFilter(hFunction, hContext)](SetExecuteOrderFilter)|Set a filter function to control the behavior when a unit picks up an item. (Modify the table and Return true to use new values, return false to cancel the event)|❌
 [void SetFixedRespawnTime(flFixedRespawnTime)](SetFixedRespawnTime)|Set a fixed delay for all players to respawn after.|❌
 [void SetFogOfWarDisabled(bDisabled)](SetFogOfWarDisabled)|Turn the fog of war on or off.|❌
+[void SetForceRightClickAttackDisabled(bDisabled)](SetForceRightClickAttackDisabled)|Prevent users from using the right click deny setting.|❌
 [void SetFountainConstantManaRegen(flConstantManaRegen)](SetFountainConstantManaRegen)|Set the constant rate that the fountain will regen mana. (-1 for default)|❌
 [void SetFountainPercentageHealthRegen(flPercentageHealthRegen)](SetFountainPercentageHealthRegen)|Set the percentage rate that the fountain will regen health. (-1 for default)|❌
 [void SetFountainPercentageManaRegen(flPercentageManaRegen)](SetFountainPercentageManaRegen)|Set the percentage rate that the fountain will regen mana. (-1 for default)|❌
@@ -98,17 +107,23 @@ Function|Description|Client
 [void SetModifierGainedFilter(hFunction, hContext)](SetModifierGainedFilter)|Set a filter function to control modifiers that are gained, return false to destroy modifier.|❌
 [void SetModifyExperienceFilter(hFunction, hContext)](SetModifyExperienceFilter)|Set a filter function to control the behavior when a hero's experience is modified. (Modify the table and Return true to use new values, return false to cancel the event)|❌
 [void SetModifyGoldFilter(hFunction, hContext)](SetModifyGoldFilter)|Set a filter function to control the behavior when a hero's gold is modified. (Modify the table and Return true to use new values, return false to cancel the event)|❌
+[void SetNeutralItemHideUndiscoveredEnabled(bEnable)](SetNeutralItemHideUndiscoveredEnabled)|When enabled, undiscovered items in the neutral item stash are hidden.|❌
+[void SetNeutralStashEnabled(bEnable)](SetNeutralStashEnabled)|Allow items to be sent to the neutral stash.|❌
+[void SetNeutralStashTeamViewOnlyEnabled(bEnable)](SetNeutralStashTeamViewOnlyEnabled)|When enabled, the all neutral items tab cannot be viewed.|❌
 [void SetOverrideSelectionEntity(hOverrideEntity)](SetOverrideSelectionEntity)|Set an override for the default selection entity, instead of each player's hero.|❌
 [void SetPauseEnabled(bEnabled)](SetPauseEnabled)|Set pausing enabled/disabled|❌
 [void SetPowerRuneSpawnInterval(flInterval)](SetPowerRuneSpawnInterval)|Set power rune spawn rate|❌
+[void SetRandomHeroBonusItemGrantDisabled(bDisabled)](SetRandomHeroBonusItemGrantDisabled)|Disables bonus items for randoming a hero.|❌
 [void SetRecommendedItemsDisabled(bDisabled)](SetRecommendedItemsDisabled)|Turn the panel for showing recommended items at the shop off/on.|❌
 [void SetRemoveIllusionsOnDeath(bRemove)](SetRemoveIllusionsOnDeath)|Make it so illusions are immediately removed upon death, rather than sticking around for a few seconds.|❌
 [void SetRespawnTimeScale(flValue)](SetRespawnTimeScale)|Sets the scale applied to non-fixed respawn times. 1 = default DOTA respawn calculations.|❌
 [void SetRuneEnabled(nRune, bEnabled)](SetRuneEnabled)|Set if a given type of rune is enabled.|❌
 [void SetRuneSpawnFilter(hFunction, hContext)](SetRuneSpawnFilter)|Set a filter function to control what rune spawns. (Modify the table and Return true to use new values, return false to cancel the event)|❌
 [void SetSelectionGoldPenaltyEnabled(bEnabled)](SetSelectionGoldPenaltyEnabled)|Enable/disable gold penalty for late picking.|❌
+[void SetSendToStashEnabled(bEnable)](SetSendToStashEnabled)|Allow items to be sent to the stash.|❌
 [void SetStashPurchasingDisabled(bDisabled)](SetStashPurchasingDisabled)|Turn purchasing items to the stash off/on. If purchasing to the stash is off the player must be at a shop to purchase items.|❌
 [void SetStickyItemDisabled(bDisabled)](SetStickyItemDisabled)|Hide the sticky item in the quickbuy.|❌
+[void SetTPScrollSlotItemOverride(pItemName)](SetTPScrollSlotItemOverride)|Sets the item which goes in the TP scroll slot|❌
 [void SetTopBarTeamValue(iTeam, nValue)](SetTopBarTeamValue)|Set the team values on the top game bar.|❌
 [void SetTopBarTeamValuesOverride(bOverride)](SetTopBarTeamValuesOverride)|Override the values of the team values on the top game bar.|❌
 [void SetTopBarTeamValuesVisible(bVisible)](SetTopBarTeamValuesVisible)|Turning on/off the team values on the top game bar.|❌

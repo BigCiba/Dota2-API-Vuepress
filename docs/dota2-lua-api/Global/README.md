@@ -5,6 +5,7 @@ Function|Description|Client
 --|--|:--:
 [void AddFOWViewer(nTeamID, vLocation, flRadius, flDuration, bObstructedVision)](AddFOWViewer)|为指定队伍添加临时视野|❌
 [float AngleDiff(float_1, float_2)](AngleDiff)|Returns the number of degrees difference between two yaw angles|✔️
+[Vector AnglesToVector(QAngle_1)](AnglesToVector)|Generate a vector given a QAngles|✔️
 [void AppendToLogFile(string_1, string_2)](AppendToLogFile)|AppendToLogFile is deprecated. Print to the console for logging instead.|✔️
 [float ApplyDamage(tDamageTable)](ApplyDamage)|对一个单位造成伤害，输入tDamageTable: victim, attacker, damage, damage_type, damage_flags, ability|❌
 [Quaternion AxisAngleToQuaternion(Vector_1, float_2)](AxisAngleToQuaternion)|(vector,float) constructs a quaternion representing a rotation by angle around the specified vector axis|✔️
@@ -12,6 +13,7 @@ Function|Description|Client
 [float CalcDistanceBetweenEntityOBB(handle_1, handle_2)](CalcDistanceBetweenEntityOBB)|计算两个实体间的OBB包围盒距离|✔️
 [float CalcDistanceToLineSegment2D(Vector_1, Vector_2, Vector_3)](CalcDistanceToLineSegment2D)||✔️
 [void CancelEntityIOEvents(ehandle_1)](CancelEntityIOEvents)|Create all I/O events for a particular entity|✔️
+[void CenterCameraOnUnit(int_1, handle_2)](CenterCameraOnUnit)|CenterCameraOnUnit( nPlayerId, hUnit ): Centers each players' camera on a unit.|❌
 [void ClearTeamCustomHealthbarColor(int_1)](ClearTeamCustomHealthbarColor)|( teamNumber )|❌
 [handle CreateDamageInfo(handle_1, handle_2, Vector_3, Vector_4, float_5, int_6)](CreateDamageInfo)|(hInflictor, hAttacker, flDamage) - Allocate a damageinfo object, used as an argument to TakeDamage(). Call DestroyDamageInfo( hInfo ) to free the object.|❌
 [bool CreateEffect(handle_1)](CreateEffect)|Pass table - Inputs: entity, effect|✔️
@@ -29,11 +31,14 @@ Function|Description|Client
 [handle CreateTempTreeWithModel(Vector_1, float_2, string_3)](CreateTempTreeWithModel)|Create a temporary tree, specifying the tree model name. (vLocation, flDuration, szModelName).|❌
 [handle CreateTrigger(Vector_1, Vector_2, Vector_3)](CreateTrigger)|CreateTrigger( vecMin, vecMax ) : Creates and returns an AABB trigger|❌
 [handle CreateTriggerRadiusApproximate(Vector_1, float_2)](CreateTriggerRadiusApproximate)|CreateTriggerRadiusApproximate( vecOrigin, flRadius ) : Creates and returns an AABB trigger thats bigger than the radius provided|❌
+[handle CreateUniformRandomStream(int_1)](CreateUniformRandomStream)|( iSeed ) - Creates a separate random number stream.|✔️
 [handle CreateUnitByName(string_1, Vector_2, bool_3, handle_4, handle_5, int_6)](CreateUnitByName)|Creates a DOTA unit by its dota_npc_units.txt name|❌
 [int CreateUnitByNameAsync(string_1, Vector_2, bool_3, handle_4, handle_5, int_6, handle_7)](CreateUnitByNameAsync)|Creates a DOTA unit by its dota_npc_units.txt name|❌
 [handle CreateUnitFromTable(handle_1, Vector_2)](CreateUnitFromTable)|Creates a DOTA unit by its dota_npc_units.txt name from a table of entity key values and a position to spawn at.|❌
 [Vector CrossVectors(Vector_1, Vector_2)](CrossVectors)|(vector,vector) cross product between two vectors|✔️
+[int DOTA_SpawnMapAtPosition(string_1, Vector_2, bool_3, handle_4, handle_5, handle_6)](DOTA_SpawnMapAtPosition)|Spawn a .vmap at the target location.|❌
 [void DebugBreak()](DebugBreak)|Breaks in the debugger|✔️
+[int DebugCreateUnit(handle_1, string_2, int_3, bool_4, handle_5)](DebugCreateUnit)|Creates a test unit controllable by the specified player.|❌
 [void DebugDrawBox(Vector_1, Vector_2, Vector_3, int_4, int_5, int_6, int_7, float_8)](DebugDrawBox)|Draw a debug overlay box (origin, mins, maxs, forward, r, g, b, a, duration )|✔️
 [void DebugDrawBoxDirection(Vector_1, Vector_2, Vector_3, Vector_4, Vector_5, float_6, float_7)](DebugDrawBoxDirection)|Draw a debug forward box (cent, min, max, forward, vRgb, a, duration)|✔️
 [void DebugDrawCircle(Vector_1, Vector_2, float_3, float_4, bool_5, float_6)](DebugDrawCircle)|Draw a debug circle (center, vRgb, a, rad, ztest, duration)|✔️
@@ -52,7 +57,7 @@ Function|Description|Client
 [void DoScriptAssert(bool_1, string_2)](DoScriptAssert)|#ScriptAssert:Asserts the passed in value. Prints out a message and brings up the assert dialog.|✔️
 [string DoUniqueString(string_1)](DoUniqueString)|#UniqueString:Generate a string guaranteed to be unique across the life of the script VM, with an optional root string. Useful for adding data to tables when not sure what keys are already in use in that table.|✔️
 [float DotProduct(Vector_1, Vector_2)](DotProduct)||❌
-[void DropNeutralItemAtPositionForHero(string_1, Vector_2, handle_3, int_4)](DropNeutralItemAtPositionForHero)|Drop a neutral item for the team of the hero at the given tier.|❌
+[handle DropNeutralItemAtPositionForHero(string_1, Vector_2, handle_3, int_4, bool_5)](DropNeutralItemAtPositionForHero)|Drop a neutral item for the team of the hero at the given tier.|❌
 [void EmitAnnouncerSound(string_1)](EmitAnnouncerSound)|Emit an announcer sound for all players.|❌
 [void EmitAnnouncerSoundForPlayer(string_1, int_2)](EmitAnnouncerSoundForPlayer)|Emit an announcer sound for a player.|❌
 [void EmitAnnouncerSoundForTeam(string_1, int_2)](EmitAnnouncerSoundForTeam)|Emit an announcer sound for a team.|❌
@@ -60,7 +65,9 @@ Function|Description|Client
 [void EmitGlobalSound(string_1)](EmitGlobalSound)|Play named sound for all players|❌
 [void EmitSoundOn(string_1, handle_2)](EmitSoundOn)|Play named sound on Entity|✔️
 [void EmitSoundOnClient(string_1, handle_2)](EmitSoundOnClient)|Play named sound only on the client for the passed in player|✔️
+[void EmitSoundOnEntityForPlayer(string_1, handle_2, int_3)](EmitSoundOnEntityForPlayer)|Emit a sound on an entity for only a specific player|❌
 [void EmitSoundOnLocationForAllies(Vector_1, string_2, handle_3)](EmitSoundOnLocationForAllies)|Emit a sound on a location from a unit, only for players allied with that unit (vLocation, soundName, hCaster|❌
+[void EmitSoundOnLocationForPlayer(string_1, Vector_2, int_3)](EmitSoundOnLocationForPlayer)|Emit a sound on a location for only a specific player|❌
 [void EmitSoundOnLocationWithCaster(Vector_1, string_2, handle_3)](EmitSoundOnLocationWithCaster)|Emit a sound on a location from a unit. (vLocation, soundName, hCaster).|❌
 [handle EntIndexToHScript(int_1)](EntIndexToHScript)|Turn an entity index integer to an HScript representing that entity's script instance.|✔️
 [void ExecuteOrderFromTable(handle_1)](ExecuteOrderFromTable)|Issue an order from a script table|❌
@@ -76,6 +83,8 @@ Function|Description|Client
 [void FireGameEvent(string_1, handle_2)](FireGameEvent)|Fire a game event.|✔️
 [void FireGameEventLocal(string_1, handle_2)](FireGameEventLocal)|Fire a game event without broadcasting to the client.|✔️
 [float FrameTime()](FrameTime)|Get the time spent on the server in the last frame|✔️
+[string GetAbilityTextureNameForAbility(string_1)](GetAbilityTextureNameForAbility)|Gets the ability texture name for an ability|✔️
+[int GetActiveSpawnGroupHandle()](GetActiveSpawnGroupHandle)|Returns the currently active spawn group handle|✔️
 [string GetDedicatedServerKey(string_1)](GetDedicatedServerKey)|( version )|❌
 [string GetDedicatedServerKeyV2(string_1)](GetDedicatedServerKeyV2)|( version )|❌
 [unknown GetEntityIndexForTreeId(unsigned_1)](GetEntityIndexForTreeId)|Get the enity index for a tree id specified as the entindex_target of a DOTA_UNIT_ORDER_CAST_TARGET_TREE.|❌
@@ -93,6 +102,7 @@ Function|Description|Client
 [Vector GetPhysVelocity(handle_1)](GetPhysVelocity)|Get Velocity for VPHYS or normal object|✔️
 [string GetSystemDate()](GetSystemDate)|Get the current real world date|❌
 [string GetSystemTime()](GetSystemTime)|Get the current real world time|❌
+[double GetSystemTimeMS()](GetSystemTimeMS)|Get system time in milliseconds|❌
 [Vector GetTargetAOELocation(int_1, int_2, int_3, Vector_4, int_5, int_6, int_7)](GetTargetAOELocation)||❌
 [Vector GetTargetLinearLocation(int_1, int_2, int_3, Vector_4, int_5, int_6, int_7)](GetTargetLinearLocation)||❌
 [int GetTeamHeroKills(int_1)](GetTeamHeroKills)|( int teamID )|❌
@@ -110,6 +120,7 @@ Function|Description|Client
 [bool IsLocationVisible(iTeamNumber, vLocation)](IsLocationVisible)|判断某个位置对某个队伍是否在战争迷雾中|❌
 [bool IsMarkedForDeletion(handle_1)](IsMarkedForDeletion)|Returns true if the entity is valid and marked for deletion.|✔️
 [bool IsServer()](IsServer)|Returns true if this is lua running from the server.dll.|✔️
+[bool IsUnitInValidPosition(handle_1)](IsUnitInValidPosition)|Returns true if the unit is in a valid position in the gridnav.|❌
 [bool IsValidEntity(handle_1)](IsValidEntity)|Checks to see if the given hScript is a valid entity|✔️
 [Vector LerpVectors(Vector_1, Vector_2, float_3)](LerpVectors)|(vector,vector,float) lerp between two vectors by a float factor returning new vector|✔️
 [void LimitPathingSearchDepth(float_1)](LimitPathingSearchDepth)|Set the limit on the pathfinding search space.|❌
@@ -119,6 +130,7 @@ Function|Description|Client
 [table LoadKeyValuesFromString(string_1)](LoadKeyValuesFromString)|Creates a table from the specified keyvalues string|✔️
 [table LocalTime()](LocalTime)|Get the current local time|✔️
 [int MakeStringToken(string_1)](MakeStringToken)|Checks to see if the given hScript is a valid entity|✔️
+[void ManuallyTriggerSpawnGroupCompletion(int_1)](ManuallyTriggerSpawnGroupCompletion)|Triggers the creation of entities in a manually-completed spawn group|✔️
 [void MinimapEvent(int_1, handle_2, int_3, int_4, int_5, int_6)](MinimapEvent)|Start a minimap event. (nTeamID, hEntity, nXCoord, nYCoord, nEventType, nEventDuration).|❌
 [void Msg(string_1)](Msg)|Print a message|✔️
 [void PauseGame(bool_1)](PauseGame)|Pause or unpause the game.|❌
@@ -143,6 +155,7 @@ Function|Description|Client
 [void RemoveSpawnGroupFilterProxy(string_1)](RemoveSpawnGroupFilterProxy)|Remove the C proxy for a script-based spawn group filter|✔️
 [void ResolveNPCPositions(Vector_1, float_2)](ResolveNPCPositions)|Check and fix units that have been assigned a position inside collision radius of other NPCs.|❌
 [bool RollPercentage(int_1)](RollPercentage)|(int nPct)|❌
+[bool RollPseudoRandomPercentage(unsigned_1, int_2, handle_3)](RollPseudoRandomPercentage)|( chance, pseudo random id, unit.|❌
 [QAngle RotateOrientation(QAngle_1, QAngle_2)](RotateOrientation)|Rotate a QAngle by another QAngle.|✔️
 [Vector RotatePosition(Vector_1, QAngle_2, Vector_3)](RotatePosition)|Rotate a Vector around a point.|✔️
 [Quaternion RotateQuaternionByAxisAngle(Quaternion_1, Vector_2, float_3)](RotateQuaternionByAxisAngle)|(quaternion,vector,float) rotates a quaternion by the specified angle around the specified vector axis|✔️
@@ -165,6 +178,7 @@ Function|Description|Client
 [void ShowGenericPopupToPlayer(handle_1, string_2, string_3, string_4, string_5, int_6)](ShowGenericPopupToPlayer)|Show a generic popup dialog to a specific player.|❌
 [void ShowMessage(string_1)](ShowMessage)|Print a hud message on all clients|❌
 [handle SpawnDOTAShopTriggerRadiusApproximate(Vector_1, float_2)](SpawnDOTAShopTriggerRadiusApproximate)|(Vector vOrigin, float flRadius )|❌
+[void SpawnEntityFromTableAsynchronous(string_1, handle_2, handle_3, handle_4)](SpawnEntityFromTableAsynchronous)|Asynchronously spawns a single entity from a table|✔️
 [handle SpawnEntityFromTableSynchronous(string_1, handle_2)](SpawnEntityFromTableSynchronous)|Synchronously spawns a single entity from a table|✔️
 [bool SpawnEntityGroupFromTable(handle_1, bool_2, handle_3)](SpawnEntityGroupFromTable)|Hierarchically spawn an entity group from a set of spawn tables.|✔️
 [int SpawnEntityListFromTableAsynchronous(handle_1, handle_2)](SpawnEntityListFromTableAsynchronous)|Asynchronously spawn an entity group from a list of spawn tables. A callback will be triggered when the spawning is complete|✔️

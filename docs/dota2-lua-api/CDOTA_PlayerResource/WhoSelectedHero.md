@@ -1,6 +1,6 @@
 # WhoSelectedHero
 ```lua
-int WhoSelectedHero(pHeroFilename)
+int WhoSelectedHero(pHeroFilename, bIgnoreUnrevealedPick)
 ```
 # Class
 ✔️ `Server: CDOTA_PlayerResource`  
@@ -12,3 +12,4 @@ int WhoSelectedHero(pHeroFilename)
 Type|Name|Description
 --|--|--
 string|pHeroFilename|No Description Set
+bool|bIgnoreUnrevealedPick|No Description Set

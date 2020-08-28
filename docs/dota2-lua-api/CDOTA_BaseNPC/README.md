@@ -15,6 +15,7 @@ Function|Description|Client
 [void AttackNoEarlierThan(flTime)](AttackNoEarlierThan)||❌
 [bool AttackReady()](AttackReady)||❌
 [float BoundingRadius2D()](BoundingRadius2D)||❌
+[void CalculateGenericBonuses()](CalculateGenericBonuses)||❌
 [bool CanEntityBeSeenByMyTeam(hEntity)](CanEntityBeSeenByMyTeam)|Check FoW to see if an entity is visible.|❌
 [bool CanSellItems()](CanSellItems)|Query if this unit can sell items.|❌
 [void CastAbilityImmediately(hAbility, iPlayerIndex)](CastAbilityImmediately)|Cast an ability immediately.|❌
@@ -161,7 +162,8 @@ Function|Description|Client
 [bool IsCourier()](IsCourier)|Is this unit a courier?|✔️
 [bool IsCreature()](IsCreature)|Is this a Creature type NPC?|✔️
 [bool IsCreep()](IsCreep)|Is this unit a creep?|✔️
-[bool IsDeniable()](IsDeniable)||✔️
+[bool IsCurrentlyHorizontalMotionControlled()](IsCurrentlyHorizontalMotionControlled)||❌
+[bool IsCurrentlyVerticalMotionControlled()](IsCurrentlyVerticalMotionControlled)||❌
 [bool IsDisarmed()](IsDisarmed)||✔️
 [bool IsDominated()](IsDominated)||✔️
 [bool IsEvadeDisabled()](IsEvadeDisabled)||✔️
@@ -191,6 +193,7 @@ Function|Description|Client
 [bool IsPositionInRange(vPosition, flRange)](IsPositionInRange)||❌
 [bool IsRangedAttacker()](IsRangedAttacker)|Is this unit a ranged attacker?|✔️
 [bool IsRealHero()](IsRealHero)|Is this a real hero?|✔️
+[bool IsReincarnating()](IsReincarnating)||❌
 [bool IsRooted()](IsRooted)||✔️
 [bool IsShrine()](IsShrine)|Is this a shrine?|❌
 [bool IsSilenced()](IsSilenced)||✔️
@@ -229,9 +232,11 @@ Function|Description|Client
 [void PlayVCD(pVCD)](PlayVCD)|Play a VCD on the NPC.|❌
 [bool ProvidesVision()](ProvidesVision)||✔️
 [void Purge(bRemovePositiveBuffs, bRemoveDebuffs, bFrameOnly, bRemoveStuns, bRemoveExceptions)](Purge)|(bool RemovePositiveBuffs, bool RemoveDebuffs, bool BuffsCreatedThisFrameOnly, bool RemoveStuns, bool RemoveExceptions|❌
+[void QueueConcept(flDelay, hCriteriaTable, hCompletionCallbackFn, hContext, hCallbackInfo)](QueueConcept)|Queue a response system concept with the TLK_DOTA_CUSTOM concept, after a delay.|❌
 [void ReduceMana(flAmount)](ReduceMana)|Remove mana from this unit, this can be used for involuntary mana loss, not for mana that is spent.|❌
 [void RemoveAbility(pszAbilityName)](RemoveAbility)|Remove an ability from this unit by name.|❌
 [void RemoveAbilityByHandle(hAbility)](RemoveAbilityByHandle)|Remove the passed ability from this unit.|❌
+[void RemoveAbilityFromIndexByName(pszAbilityName)](RemoveAbilityFromIndexByName)||❌
 [void RemoveGesture(nActivity)](RemoveGesture)|Remove the given gesture activity.|❌
 [void RemoveHorizontalMotionController(hBuff)](RemoveHorizontalMotionController)||❌
 [void RemoveItem(hItem)](RemoveItem)|Removes the passed item from this unit's inventory and deletes it.|❌
@@ -241,6 +246,7 @@ Function|Description|Client
 [void RemoveVerticalMotionController(hBuff)](RemoveVerticalMotionController)||❌
 [void RespawnUnit()](RespawnUnit)|Respawns the target unit if it can be respawned.|❌
 [float Script_GetAttackRange()](Script_GetAttackRange)|Gets this unit's attack range after all modifiers.|✔️
+[bool Script_IsDeniable()](Script_IsDeniable)||✔️
 [void SellItem(hItem)](SellItem)|Sells the passed item in this unit's inventory.|❌
 [void SetAbilityByIndex(hAbility, iIndex)](SetAbilityByIndex)|Set the ability by index.|❌
 [void SetAcquisitionRange(nRange)](SetAcquisitionRange)||❌
@@ -293,6 +299,8 @@ Function|Description|Client
 [void SpeakConcept(hCriteriaTable)](SpeakConcept)|Speak a response system concept with the TLK_DOTA_CUSTOM concept.|❌
 [void SpendMana(flManaSpent, hAbility)](SpendMana)|Spend mana from this unit, this can be used for spending mana from abilities or item usage.|❌
 [void StartGesture(nActivity)](StartGesture)|Add the given gesture activity.|❌
+[void StartGestureFadeWithSequenceSettings(nActivity)](StartGestureFadeWithSequenceSettings)|Add the given gesture activity faded according to its sequence settings.|❌
+[void StartGestureWithFade(nActivity, fFadeIn, fFadeOut)](StartGestureWithFade)|Add the given gesture activity faded according to to the parameters.|❌
 [void StartGestureWithPlaybackRate(nActivity, flRate)](StartGestureWithPlaybackRate)|Add the given gesture activity with a playback rate override.|❌
 [void Stop()](Stop)|Stop the current order.|❌
 [void StopFacing()](StopFacing)||❌

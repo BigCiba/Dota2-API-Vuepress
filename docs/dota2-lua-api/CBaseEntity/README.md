@@ -47,6 +47,7 @@ Function|Description|Client
 [Vector GetRightVector()](GetRightVector)|Get the right vector of the entity.|❌
 [handle GetRootMoveParent()](GetRootMoveParent)|If in hierarchy, walks up the hierarchy to find the root parent.|❌
 [float GetSoundDuration(soundname, actormodel)](GetSoundDuration)|Returns float duration of the sound. Takes soundname and optional actormodelname.|❌
+[int GetSpawnGroupHandle()](GetSpawnGroupHandle)|Returns the spawn group handle of this entity|❌
 [int GetTeam()](GetTeam)|Get the team number of this entity.|❌
 [int GetTeamNumber()](GetTeamNumber)|Get the team number of this entity.|✔️
 [Vector GetUpVector()](GetUpVector)|Get the up vector of the entity.|❌

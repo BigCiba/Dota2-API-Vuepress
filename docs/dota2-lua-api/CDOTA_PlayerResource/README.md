@@ -6,6 +6,7 @@ Function|Description|Client
 [void AddAegisPickup(iPlayerID)](AddAegisPickup)||❌
 [void AddClaimedFarm(iPlayerID, flFarmValue, bEarnedValue)](AddClaimedFarm)||❌
 [void AddGoldSpentOnSupport(iPlayerID, iCost)](AddGoldSpentOnSupport)||❌
+[void AddNeutralItemToStash(iPlayerID, nTeamNumber, hItem)](AddNeutralItemToStash)||❌
 [void AddRunePickup(iPlayerID)](AddRunePickup)||❌
 [bool AreUnitsSharedWithPlayerID(nUnitOwnerPlayerID, nOtherPlayerID)](AreUnitsSharedWithPlayerID)||❌
 [bool CanRepick(iPlayerID)](CanRepick)||❌
@@ -29,6 +30,8 @@ Function|Description|Client
 [int GetDamageDoneToHero(iPlayerID, iVictimID)](GetDamageDoneToHero)||❌
 [int GetDeaths(iPlayerID)](GetDeaths)||❌
 [int GetDenies(iPlayerID)](GetDenies)||❌
+[int GetEventGameCustomActionClaimCount(nPlayerID, unActionID)](GetEventGameCustomActionClaimCount)|(nPlayerID, nActionID)|❌
+[int GetEventGameCustomActionClaimCountByName(nPlayerID, pActionName)](GetEventGameCustomActionClaimCountByName)|(nPlayerID, pActionName)|❌
 [unsigned GetEventPointsForPlayerID(nPlayerID)](GetEventPointsForPlayerID)||❌
 [unsigned GetEventPremiumPoints(nPlayerID)](GetEventPremiumPoints)||❌
 [unknown GetEventRanks(nPlayerID)](GetEventRanks)||❌
@@ -47,6 +50,7 @@ Function|Description|Client
 [int GetLastHitStreak(iPlayerID)](GetLastHitStreak)||❌
 [int GetLastHits(iPlayerID)](GetLastHits)||❌
 [int GetLevel(iPlayerID)](GetLevel)||❌
+[unknown GetLiveSpectatorTeam(iPlayerID)](GetLiveSpectatorTeam)||❌
 [int GetMisses(iPlayerID)](GetMisses)||❌
 [int GetNearbyCreepDeaths(iPlayerID)](GetNearbyCreepDeaths)||❌
 [int GetNetWorth(iPlayerID)](GetNetWorth)||❌
@@ -90,6 +94,7 @@ Function|Description|Client
 [bool HasCustomGameTicketForPlayerID(iPlayerID)](HasCustomGameTicketForPlayerID)|Does this player have a custom game ticket for this game?|❌
 [bool HasRandomed(iPlayerID)](HasRandomed)||❌
 [bool HasSelectedHero(iPlayerID)](HasSelectedHero)||❌
+[bool HasSetEventGameCustomActionClaimCount()](HasSetEventGameCustomActionClaimCount)||❌
 [bool HaveAllPlayersJoined()](HaveAllPlayersJoined)||❌
 [void IncrementAssists(iPlayerID, iVictimID)](IncrementAssists)||❌
 [void IncrementClaimedDenies(iPlayerID)](IncrementClaimedDenies)||❌
@@ -107,7 +112,7 @@ Function|Description|Client
 [bool IsBroadcaster(iPlayerID)](IsBroadcaster)||❌
 [bool IsDisableHelpSetForPlayerID(nPlayerID, nOtherPlayerID)](IsDisableHelpSetForPlayerID)||❌
 [bool IsFakeClient(iPlayerID)](IsFakeClient)||❌
-[bool IsHeroSelected(pHeroname)](IsHeroSelected)||❌
+[bool IsHeroSelected(pHeroname, bIgnoreUnrevealedPick)](IsHeroSelected)||❌
 [bool IsHeroSharedWithPlayerID(nUnitOwnerPlayerID, nOtherPlayerID)](IsHeroSharedWithPlayerID)||❌
 [bool IsValidPlayer(iPlayerID)](IsValidPlayer)||❌
 [bool IsValidPlayerID(iPlayerID)](IsValidPlayerID)||❌
@@ -126,6 +131,7 @@ Function|Description|Client
 [void SetCanRepick(iPlayerID, bCanRepick)](SetCanRepick)||❌
 [void SetCustomBuybackCooldown(iPlayerID, flCooldownTime)](SetCustomBuybackCooldown)|Set the buyback cooldown for this player.|❌
 [void SetCustomBuybackCost(iPlayerID, iGoldCost)](SetCustomBuybackCost)|Set the buyback cost for this player.|❌
+[void SetCustomIntParam(iPlayerID, iParam)](SetCustomIntParam)||❌
 [void SetCustomPlayerColor(iPlayerID, r, g, b)](SetCustomPlayerColor)|Set custom color for player (minimap, scoreboard, etc)|❌
 [void SetCustomTeamAssignment(iPlayerID, iTeamAssignment)](SetCustomTeamAssignment)|Set custom team assignment for this player.|❌
 [void SetGold(iPlayerID, iGold, bReliable)](SetGold)||❌
@@ -135,4 +141,4 @@ Function|Description|Client
 [void SetUnitShareMaskForPlayer(nPlayerID, nOtherPlayerID, nFlag, bState)](SetUnitShareMaskForPlayer)||❌
 [void SpendGold(iPlayerID, iCost, iReason)](SpendGold)||❌
 [void UpdateTeamSlot(iPlayerID, iTeamNumber, desiredSlot)](UpdateTeamSlot)||❌
-[int WhoSelectedHero(pHeroFilename)](WhoSelectedHero)||❌
+[int WhoSelectedHero(pHeroFilename, bIgnoreUnrevealedPick)](WhoSelectedHero)||❌

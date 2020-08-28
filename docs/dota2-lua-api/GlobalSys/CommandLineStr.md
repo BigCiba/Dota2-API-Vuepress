@@ -4,7 +4,7 @@ table CommandLineStr(string_1, string_2)
 ```
 # Class
 ✔️ `Server: GlobalSys`  
-❌ `Client: undefined`  
+✔️ `Client: GlobalSys`  
 
 # Function Description
 CommandLineStr(name) : returns the command line param as a string.

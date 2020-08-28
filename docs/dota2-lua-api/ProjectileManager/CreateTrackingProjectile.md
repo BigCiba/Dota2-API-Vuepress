@@ -1,6 +1,6 @@
 # CreateTrackingProjectile
 ```lua
-void CreateTrackingProjectile(handle_1)
+int CreateTrackingProjectile(handle_1)
 ```
 # Class
 ✔️ `Server: ProjectileManager`  
